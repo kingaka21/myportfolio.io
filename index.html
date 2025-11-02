@@ -8,19 +8,30 @@
 </head>
 <body>
   <header>
-    <h1>Akram Ouahid</h1>
-    <h2>Étudiant en 5ᵉ année - Cybersécurité</h2>
-    <p>Passionné par la sécurité des systèmes d'information et la gestion des vulnérabilités.</p>
+    <div class="header-content">
+      <img src="assets/photo.jpg" alt="Photo d'Akram Ouahid" class="photo">
+      <div>
+        <h1>Akram Ouahid</h1>
+        <h2>Étudiant en 5ᵉ année - Cybersécurité</h2>
+        <p>Passionné par la sécurité offensive et la protection des infrastructures d’entreprises.</p>
+      </div>
+    </div>
   </header>
+
+  <section id="presentation">
+    <h3>👋 Présentation</h3>
+    <p>Je suis actuellement étudiant en 5ᵉ année de cybersécurité. Animé par une forte curiosité technique et un esprit d’analyse, je m’investis dans la recherche de solutions de sécurité innovantes. Mes valeurs reposent sur la rigueur, l’apprentissage continu et le principe du <strong>Zero Trust</strong>.</p>
+  </section>
 
   <section id="competences">
     <h3>💻 Compétences Techniques</h3>
     <ul>
-      <li>Analyse de vulnérabilités (Nmap, Nessus, OpenVAS)</li>
-      <li>Sécurité réseau (Firewall, IDS/IPS, Wireshark)</li>
-      <li>Tests d’intrusion et forensic</li>
-      <li>Linux, Windows Server, Bash, PowerShell</li>
-      <li>SIEM (Splunk, Wazuh)</li>
+      <li>Analyse de vulnérabilités — <strong>Nessus</strong></li>
+      <li>Pentesting — <strong>Metasploit, Burp Suite, Nmap, Hydra, Wireshark</strong></li>
+      <li>Sécurité des réseaux — <strong>Pare-feu, IDS/IPS, segmentation</strong></li>
+      <li>Sécurité des systèmes — <strong>Windows Server, Linux, Active Directory</strong></li>
+      <li>Cryptographie — <strong>SSL/TLS, chiffrement symétrique et asymétrique</strong></li>
+      <li>Gestion des logs & SIEM — <strong>Wazuh</strong></li>
     </ul>
 
     <h3>🧠 Soft Skills</h3>
@@ -32,39 +43,46 @@
   </section>
 
   <section id="projets">
-    <h3>🛠️ Projets Réalisés</h3>
+    <h3>🛠️ Projet Phare</h3>
 
     <div class="projet">
-      <h4>Audit de sécurité réseau</h4>
-      <p>Analyse complète d’un réseau d’entreprise avec Nmap et Nessus. Rédaction d’un rapport de vulnérabilités et recommandations de mitigation.</p>
+      <h4>Analyse de vulnérabilités et test d’intrusion sur un environnement virtualisé</h4>
+      <p><strong>Outils :</strong> GNS3, Kali Linux, Metasploit, Burp Suite, Nmap, Wireshark</p>
+      <p><strong>Objectif :</strong> Identifier, exploiter et corriger des failles de sécurité dans un réseau simulé (Windows/Linux).</p>
+      <p><strong>Résultats :</strong></p>
+      <ul>
+        <li>Rapport d’audit complet avec plan de remédiation</li>
+        <li>Renforcement de la sécurité du système testé</li>
+      </ul>
     </div>
-
-    <div class="projet">
-      <h4>Simulation d’attaque et détection SIEM</h4>
-      <p>Mise en place d’un environnement de test sous Wazuh et Kali Linux pour surveiller et détecter des attaques simulées.</p>
-    </div>
-  </section>
-
-  <section id="formation">
-    <h3>🎓 Formation</h3>
-    <p>Étudiant en 5ᵉ année en Cybersécurité — <strong>[Nom de ton école]</strong></p>
-    <p>Modules clés : Sécurité des réseaux, Pentesting, Forensic, Cryptographie, Cloud Security.</p>
   </section>
 
   <section id="certifications">
-    <h3>🏆 Certifications</h3>
+    <h3>🏆 Certifications et Formations Complémentaires</h3>
     <ul>
-      <li>TryHackMe — Compétences en Hacking Éthique</li>
-      <li>Introduction au Pentesting — Coursera</li>
+      <li>Préparation CEH (Certified Ethical Hacker)</li>
+      <li>CompTIA Security+ (en cours)</li>
+      <li>ISO 27001 – Fondamentaux de la sécurité de l’information</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h3>📞 Contact</h3>
-    <p>Email : <a href="mailto:akram.ouahid@example.com">akram.ouahid@example.com</a></p>
-    <p>LinkedIn : <a href="https://linkedin.com/in/akramouahid">linkedin.com/in/akramouahid</a></p>
-    <p>GitHub : <a href="https://github.com/akramouahid">github.com/akramouahid</a></p>
+  <section id="objectif">
+    <h3>🎯 Objectif Professionnel</h3>
+    <p>Devenir <strong>Ingénieur en cybersécurité offensive</strong> ou <strong>Consultant en sécurité informatique</strong>, capable d’auditer et de renforcer les infrastructures critiques.  
+    À moyen terme, évoluer vers un rôle de <strong>Security Architect</strong>.</p>
+  </section>
+
+  <section id="valeurs">
+    <h3>💬 Citation personnelle</h3>
+    <blockquote>“Zero trust et ferme bien sur tes bijoux pour les trouver.”</blockquote>
+  </section>
+
+  <section id="liens">
+    <h3>🔗 Liens Professionnels</h3>
+    <p>GitHub : <a href="https://github.com/kingaka21" target="_blank">github.com/kingaka21</a></p>
+    <p>LinkedIn : <a href="https://linkedin.com/in/akramouahid" target="_blank">linkedin.com/in/akramouahid</a></p>
     <p>CV : <a href="assets/CV_Akram_Ouahid.pdf" target="_blank">Télécharger mon CV</a></p>
+    <p><img src="assets/qrcode.png" alt="QR Code GitHub" class="qr"></p>
   </section>
 
   <footer>
