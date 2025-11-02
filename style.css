@@ -1,4 +1,7 @@
 /* ======== STYLE GLOBAL ======== */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0d1117;
@@ -155,3 +158,4 @@ footer p {
     width: 100px;
   }
 }
+
