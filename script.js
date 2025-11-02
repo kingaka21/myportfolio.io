@@ -1,19 +1,35 @@
 /* ======== E-PORTFOLIO DYNAMIQUE ======== */
 
-// === Effet machine à écrire sur le titre ===
+// === Effet machine à écrire en boucle sur le titre ===
 document.addEventListener("DOMContentLoaded", () => {
   const title = document.querySelector("header h1");
   const text = title.textContent;
   title.textContent = "";
   let i = 0;
+  let deleting = false;
 
   function typeWriter() {
-    if (i < text.length) {
+    if (!deleting && i < text.length) {
+      // On écrit les lettres une à une
       title.textContent += text.charAt(i);
       i++;
-      setTimeout(typeWriter, 100);
+      setTimeout(typeWriter, 150);
+    } else if (!deleting && i === text.length) {
+      // Pause quand le mot est complet
+      deleting = true;
+      setTimeout(typeWriter, 1200);
+    } else if (deleting && i > 0) {
+      // On efface progressivement
+      title.textContent = text.substring(0, i - 1);
+      i--;
+      setTimeout(typeWriter, 80);
+    } else if (deleting && i === 0) {
+      // Repart de zéro
+      deleting = false;
+      setTimeout(typeWriter, 300);
     }
   }
+
   typeWriter();
 });
 
